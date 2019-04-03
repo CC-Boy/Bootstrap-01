@@ -7,8 +7,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Bootstrap CSS -->
     <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/bootstrap-reboot.min.css" rel="stylesheet">
     <link href="../css/common.sys.css" rel="stylesheet">
 
+    <style>
+        a{
+           margin-top: 10px;
+        }
+
+
+    </style>
 </head>
 <body>
 <!-- header nav  -->
@@ -20,26 +28,76 @@
         <span class="navbar-toggler-icon"></span>
     </button>
 </nav>
-
 <div class="container-fluid">
     <div class="row">
-        <nav  class="col-md-2 d-none d-md-block   sidebar ">
-            <div class=" sidebar-sticky ">
-                <ul class="nav flex-column">
-                    <li class="nav-item active">首页</li>
-                    <li class="nav-item">首页</li>
-                    <li class="nav-item">首页</li>
-                    <li class="nav-item">首页</li>
-                    <li class="nav-item">首页</li>
+        <!-- lift slide  -->
+        <div  class=" col-md-2 d-none d-md-block   sidebar ">
+            <ul class="nav  nav-pills flex-column sidebar-sticky " style="padding-top: 10px">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#"> Active</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="#"> Active</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="#"> Active</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="#"> Active</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="#"> Active</a>
+                </li>
+            </ul>
+        </div>
+        <!-- main -->
+        <div  class="col-md px-0">
+            <nav>
+                <ol class="breadcrumb" >
+                    <li class="breadcrumb-item active" aria-current="page">Home</li>
+                    <li class="breadcrumb-item active" aria-current="page">List</li>
+                    <li class="breadcrumb-item active" aria-current="page">List</li>
+                    <li class="breadcrumb-item active" aria-current="page">List</li>
+                    <li class="breadcrumb-item active" aria-current="page">List</li>
+                </ol>
+            </nav>
+            <div class="col-md">
+                <form >
+                    <div class="row offset-1">
+                        <div class="form-group form-inline col-md-3">
+                            <label for="bookName" >BookName</label>
+                            <input class="form-control ml-3 " name="bookName" id="bookName" placeholder="inputow!">
+                        </div>
+                        <div class="form-group form-inline col-md-3">
+                            <label for="bookName" >BookSize</label>
+                            <input class="form-control ml-3 " name="bookName" id="bookName" placeholder="input !">
+                        </div>
+                        <div class="form-group form-inline col-md-3">
+                            <label for="bookName" >Author</label>
+                            <input class="form-control ml-3 " name="bookName" id="bookName" placeholder="inw!">
+                        </div>
+                    </div>
+                    <div class="row offset-1">
+                        <div class="form-group form-inline col-md-3">
+                            <label for="bookName" >BookName</label>
+                            <input class="form-control ml-3 " name="bookName" id="bookName" placeholder="inputow!">
+                        </div>
+                        <div class="form-group form-inline col-md-3">
+                            <label for="bookName" >BookSize</label>
+                            <input class="form-control ml-3 " name="bookName" id="bookName" placeholder="input !">
+                        </div>
+                        <div class="form-group form-inline col-md-3">
+                            <label for="bookName" >Author</label>
+                            <input class="form-control ml-3 " name="bookName" id="bookName" placeholder="inw!">
+                        </div>
+                    </div>
 
-                </ul>
-
-
+                </form>
 
             </div>
 
+        </div>
 
-        </nav>
 
 
 

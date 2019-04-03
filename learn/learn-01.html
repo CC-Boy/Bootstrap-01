@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <!-- Required meta tags -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+</head>
+<!-- lession 01 -->
+<div class="container">
+<div class="border-1 w-50 " style="border-radius: 1rem">
+    <div class=" alert  alert-success m-auto alert-dismissible  fade show"  role="alert"   id="myAlert">
+        <H4 class=" alert-heading m-0 m-auto ">提示标题 </H4><hr>
+        正常提示，提示内容
+        <a href="#" class="alert-link">dangeLink</a>
+        <button type="button" data-dissmiss="alert" aria-label="Close" class="close" >
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+</div>
+</div>
+<div class="container">
+    <button type="button" onclick="$('.alert').alert('close')">Close</button>
+    <button type="button" onclick="$('.alert').alert()">OPen</button>
+    <button type="button" onclick="$('.alert').alert('dispose')">Dispose</button>
+</div>
+
+<div class="container">
+    <h1 > 标题 <span class="badge badge-danger">danger</span></h1>
+    <h1 > 标题 <span class="badge badge-danger badge-pill">danger</span></h1>
+    <h1 > 标题 <span class="badge badge-danger badge-secondary">danger</span></h1>
+    <a href="#" class="badge badge-primary">Primary</a>
+</div>
+
+
+<div class="container">
+    <nav aria-label="breadcrumb">
+        <ul class="breadcrumb">
+            <li class="breadcrumb-item " >
+                <a href="#">Home breaccurmb</a>
+            </li>
+            <li class="breadcrumb-item active " aria-current="page">
+               Home breaccurmb
+            </li>
+        </ul>
+
+    </nav>
+</div>
+
+<div class="container">
+    <button class="btn btn-danger btn-outline-dark btn-block " data-toggle="button"   >按钮Button <span class="badge badge-light badge-pill">9</span> </button>
+    <button class="btn btn-danger btn-outline-dark btn-block active">按钮Button <span class="badge badge-light badge-pill">9</span> </button>
+    <button class="btn btn-danger btn-outline-dark btn-block " disabled >按钮Button <span class="badge badge-light badge-pill">9</span> </button>
+
+
+    <a class="btn btn-primary" href="#" role="button" data-toggle="button" aria-pressed="true" > 特殊，需给辅助器添加rol="button"</a>
+    <a class="btn btn-primary disabled" href="#" role="button" aria-disabled="true" data-toggle="button"> 特殊，需给辅助器添加rol="button"</a>
+
+
+    <div class="btn-group btn-group-buttons" data-toggle="buttons">
+        <label class="btn btn-danger">
+            <a type="button  btn-danger ">group1</a>
+        </label>
+        <label class="btn btn-danger">
+            <a type="button btn-danger ">group1</a>
+        </label>
+        <label class="btn btn-danger">
+        <a type="button btn-danger">group1</a>
+        </label>
+    </div>
+    <div class="btn-group btn-group-toggle" data-toggle="buttons">
+        <label class="btn btn-light ">
+            <input type="radio" name="radios"  >lage
+        </label>
+        <label class="btn btn-light ">
+            <input type="radio"  name="radios" >lage
+        </label>
+        <label class="btn  btn-light">
+            <input type="radio"  name="radios" >lage
+        </label>
+    </div>
+
+    <div class="btn-group btn-group-toggle" data-toggle="buttons">
+        <label class="btn btn-danger ">
+            <input type="checkbox" name="radios" checked >lage
+        </label>
+        <label class="btn  btn-danger">
+            <input type="checkbox"  name="radios" >lage
+        </label>
+        <label class="btn btn-danger ">
+            <input type="checkbox"  name="radios"  >lage
+        </label>
+    </div>
+
+</div>
+
+<div class="container">
+    <div class="btn-group" data-toggle="buttons" >
+        <button class="btn btn-danger" type="button">上</button>
+        <button class="btn btn-dark" type="button">下</button>
+        <button class="btn btn-success" type="button">左</button>
+        <button class="btn btn-info" type="button">右</button>
+        <button class="btn btn-light" type="button">中</button>
+    </div>
+
+
+
+</div>
+
+<div class="container">
+    <div class="btn-toolbar  mt-1 border-1" role="toolbar">
+        <div class="btn-group"  data-toggle="buttons">
+            <button class="btn btn-danger" type="button">上</button>
+            <button class="btn btn-dark" type="button">下</button>
+            <button class="btn btn-success" type="button">左</button>
+            <button class="btn btn-info" type="button">右</button>
+            <button class="btn btn-light" type="button">中</button>
+        </div>
+
+        <div class="btn-group ml-1"  data-toggle="buttons">
+            <button class="btn btn-danger" type="button">金</button>
+            <button class="btn btn-dark" type="button">木</button>
+            <button class="btn btn-success" type="button">水</button>
+            <button class="btn btn-info" type="button">火</button>
+            <button class="btn btn-light" type="button">土</button>
+        </div>
+    </div>
+
+
+
+</div>
+
+<script rel="script" src="../js/jquery-3.3.1.min.js"></script>
+<script rel="script" src="../js/bootstrap.min.js"></script>
+<script rel="script">
+    $('#myAlert').on('closed.bs.alert', function () {
+       alert("closed");
+    })
+
+    $('#myAlert').on('close.bs.alert', function () {
+        alert("close");
+    })
+
+</script>
+</body>
+</html>
